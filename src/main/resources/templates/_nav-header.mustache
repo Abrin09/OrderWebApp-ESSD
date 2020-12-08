@@ -1,0 +1,21 @@
+<nav
+	class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar primary-color">
+	<div class="navbar-brand" href="#">
+		Order Manager - ESSD - MSC - UPM <br> {{#order}} <a
+			class="back-button" href="/order-manager/order/{{id}}"
+			data-toggle="tooltip-secondary-scroll-2-inside"
+			data-placement="bottom" title="Back"> <i
+			class="fa fa-lg fa-angle-left" aria-hidden="true"></i>
+		</a> {{/order}} {{^order}} <a class="back-button"
+			href="/order-manager/orders"
+			data-toggle="tooltip-secondary-scroll-2-inside"
+			data-placement="bottom" title="Back"> <i
+			class="fa fa-lg fa-angle-left" aria-hidden="true"></i>
+		</a> {{/order}}
+	</div>
+	<div class="avatar ml-auto white">
+		<img
+			src="https://www.etsisi.upm.es/sites/default/files/images/logo_EUI_color-2.png"
+			alt="ETSISI" class="avatar-mini img-fluid z-depth-1">
+	</div>
+</nav>
